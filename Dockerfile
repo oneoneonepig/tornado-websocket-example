@@ -9,5 +9,6 @@ RUN cd /tmp \
     && pip install -r requirements.txt
 
 EXPOSE 8888
+WORKDIR /tmp/tornado-websocket-example
 
 CMD ["python", "/tmp/tornado-websocket-example/app.py"]
